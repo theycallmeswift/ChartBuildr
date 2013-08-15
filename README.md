@@ -38,6 +38,15 @@ Start the jekyll server:
 
     jekyll serve -w
 
+## Powered By...
+
+ChartBuildr uses the awesome [Chart.js](http://www.chartjs.org/) library to
+generate the charts you're downloading.  Props to [@nnnick](https://github.com/nnnick)
+for writing it.
+
+Many of the awesome icons you see come from [The Noun Project](http://thenounproject.com/).
+Special thanks to Alex Fuller and Juan Pablo Bravo for their icons.
+
 ## License
 
 ```
