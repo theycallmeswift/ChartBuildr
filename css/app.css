@@ -11,6 +11,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
+
+.rightalign {
+  text-align: right;
+}
+
+.spacer {
+  padding: 0 15px;
+  font-weight: normal;
+}
+
 canvas {
   display: block;
   max-width: 62.5em;
@@ -44,6 +54,31 @@ canvas {
   background: #fff;
   border-radius: 5px;
   margin: 20px 0;
+}
+
+.chart-types {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.chart-types h6 {
+  border-bottom: 1px dotted #343434;
+  font-family: Sanchez, serif;
+  font-weight: normal;
+  margin-left: -5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.chart-types a img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.chart-types a:hover img, .chart-types a.selected img {
+  background: #fff;
+  border: 1px solid #343434;
 }
 
 /* Header */
@@ -104,6 +139,3 @@ canvas {
   padding: 2em 0;
 }
 
-#footer p {
-  text-align: right;
-}

@@ -4,7 +4,7 @@ permalink: /:title
 rdiscount:
   extensions: [smart]
 
-name: Chart Builder
-url: http://chartbuilder.com
+name: ChartBuildr
+url: http://chartbuildr.com
 meta:
   description: Build charts.  Quick and Easy.

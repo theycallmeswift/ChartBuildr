@@ -2,28 +2,29 @@
 layout: default
 ---
 <div class="row chart-container">
-  <div class="large-12 columns">
+  <div class="large-1 columns chart-types">
+    <h6>Multi Column</h6>
+    <a href="#" data-type="Line"><img src="/img/line.png" /></a>
+    <a href="#" class="selected" data-type="Bar"><img src="/img/bar.png" /></a>
+    <a href="#" data-type="Radar"><img src="/img/radar.png" /></a>
+  </div>
+  <div class="large-10 columns">
     <div class="chart-panel panel">
       <canvas id="main-chart"></canvas>
     </div>
-    <hr />
+  </div>
+  <div class="large-1 columns chart-types">
+    <h6>Single Column</h6>
+    <a href="#" data-type="Pie"><img src="/img/pie.png" /></a>
+    <a href="#" data-type="Doughnut"><img src="/img/doughnut.png" /></a>
+    <a href="#" data-type="PolarArea"><img src="/img/polar.png" /></a>
   </div>
 </div>
+<div class="row"><div class="large-12"><hr /></div></div>
 <div class="row">
   <div class="large-6 columns">
     <h3>Source Data</h3>
-    <textarea id="source">
-Reason, Students
-Learning, 64
-Networking, 56
-Build Something, 35
-Fun, 17
-Free Things, 11
-Showing of Skills, 10
-Prizes, 10
-Job, 8
-Other, 1
-    </textarea>
+    <textarea id="source">{% include home/sample_data.html %}</textarea>
   </div>
   <div class="large-6 columns">
     <h3>Parsed Data</h3>

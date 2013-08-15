@@ -1,17 +1,24 @@
 <header id="top-header">
-  <nav class="top-bar">
-    <ul class="title-area">
-      <li class="name"><h1><a href="#">Chart Builder</a></h1></li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-      <ul class="left">
+  <div class="row">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name"><h1><a href="#">{{ site.name }}</a></h1></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
       </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+        </ul>
 
-      <ul class="right">
-        <li><a class="button" id="download-chart" target="_blank" href="/images/chart.png" download="chart.png">Download Chart</a></li>
-        <li><a class="button" href="#">Share Chart</a></li>
-      </ul>
-    </section>
-  </nav>
+        <ul class="right">
+          <li>
+            <form id="download-chart" action="http://localhost:3000/v1/charts/download" method="post">
+              <input type="hidden" name="filename" value="chart.png" />
+              <input type="hidden" name="data" id="chart-data" value="" />
+              <input type="submit" class="button"  value="Download Chart"/>
+            </form>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
 </header>
