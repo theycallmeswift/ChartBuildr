@@ -1,0 +1,10 @@
+markdown: rdiscount
+pygments: true
+permalink: /:title
+rdiscount:
+  extensions: [smart]
+
+name: Chart Builder
+url: http://chartbuilder.com
+meta:
+  description: Build charts.  Quick and Easy.

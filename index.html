@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<div class="row chart-container">
+  <div class="large-12 columns">
+    <div class="chart-panel panel">
+      <canvas id="main-chart"></canvas>
+    </div>
+    <hr />
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns">
+    <h3>Source Data</h3>
+    <textarea id="source">
+Reason, Students
+Learning, 64
+Networking, 56
+Build Something, 35
+Fun, 17
+Free Things, 11
+Showing of Skills, 10
+Prizes, 10
+Job, 8
+Other, 1
+    </textarea>
+  </div>
+  <div class="large-6 columns">
+    <h3>Parsed Data</h3>
+    <div class="data-table"></div>
+  </div>
+</div>
+
+<script type="text/template" id="data-table-template">
+  <table>
+    <thead>
+      <tr>
+        <% for(var h = 0; h < headers.length; h++) { %>
+          <th><%= headers[h] %></th>
+        <% } %>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < rows.length; i++) { %>
+        <tr>
+          <% for(var j = 0; j < rows[i].length; j++) { %>
+            <td><%= rows[i][j] %></td>
+          <% } %>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</script>

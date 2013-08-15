@@ -1,0 +1,18 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+
+<meta name="description" content="{{ site.meta.description }}" />
+
+<link rel="stylesheet" href="/css/foundation.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:700,400|Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/app.css" />
+
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}"/>
+<meta property="og:description" content="{{ site.meta.description }}"/>
+<meta property="og:type" content="{% if page.page_type %}{{ page.page_type }}{% else %}website{% endif %}"/>
+<meta property="og:image" content="{{ site.url }}/img/fb-logo.png"/>
+<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+
+<script src="/js/vendor/custom.modernizr.js"></script>
