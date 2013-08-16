@@ -1,0 +1,25 @@
+<h3>Chart Colors</h3>
+
+<p>Customize the colors of your chart.  Drag &amp; drop colors to change the order.</p>
+
+<ul class="colors-grid small-block-grid-4 sortable">
+</ul>
+
+<script type="text/template" id="color-template">
+  <li data-color="<%= color %>">
+    <div style="background: <%= color %>">
+      <span class="order">#<%= number %></span>
+      <span class="color-swatch"></span><span class="color-hex"><%= color %></span>
+      <a href="#" class="destroy">x</a>
+    </div>
+  </li>
+</script>
+
+<script type="text/template" id="color-adder-template">
+  <li class="disabled color-adder">
+    <div>
+      <input type="text" placeholder="#ffffff" />
+      <a href="#" class="button small expand">Add</a>
+    </div>
+  </li>
+</script>

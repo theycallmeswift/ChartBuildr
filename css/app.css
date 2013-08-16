@@ -12,6 +12,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+fieldset legend {
+  background: transparent;
+}
+
+input[type="checkbox"] {
+  font-size: 150%;
+}
+
 .rightalign {
   text-align: right;
 }
@@ -19,6 +27,44 @@ h1, h2, h3, h4, h5, h6 {
 .spacer {
   padding: 0 15px;
   font-weight: normal;
+}
+
+.colors-grid li div {
+  border: 1px solid #CCC;
+  background: #F6F6F6;
+  cursor: move;
+  margin: 0px;
+  padding: 0.5em; 
+  position: relative;
+  text-align: center;
+}
+
+.colors-grid li.color-adder {
+  cursor: default;
+}
+
+.colors-grid li.color-adder input {
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.colors-grid li.color-adder .button {
+  margin: 0;
+}
+
+.colors-grid li div .order {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.colors-grid li div .destroy {
+  cursor: default;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 
 canvas {

@@ -3,7 +3,7 @@ function SwiftChart(options) {
   this.drawingOptions = {}
   this.data = {};
   this.type = options.type || "Bar";
-  this.colors = options.colors || ["97BBCD", "DCDCDC", "3B8183", "ED303C", "FF9C5B", "FAD089",  "40223E", "403B33", "0B486B" ];
+  this.colors = options.colors || ["97BBCD", "DCDCDC", "3B8183", "ED303C", "FF9C5B", "FAD089",  "C584CC", "DFB190", "D4728B" ];
 
   // Initialize Context
   this.ctx = this.canvas.get(0).getContext("2d");
