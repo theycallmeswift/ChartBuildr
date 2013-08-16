@@ -67,6 +67,28 @@ input[type="checkbox"] {
   right: 10px;
 }
 
+.section-container {
+  margin-top: 20px;
+}
+
+.section-container .section-panel {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.section-container .section-title a {
+  padding: 0.9375em;
+  background: none;
+  font-weight: bold;
+}
+
+.section-container .section-title a:hover,
+.section-container .active .section-title a {
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #F6F6F6;
+  color: #343434;
+}
+
 canvas {
   display: block;
   max-width: 62.5em;

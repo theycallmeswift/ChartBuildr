@@ -20,32 +20,24 @@ layout: default
     <a href="#" data-type="PolarArea"><img src="/img/polar.png" /></a>
   </div>
 </div>
-<div class="row"><div class="large-12"><hr /></div></div>
-<div class="row">
-  <div class="large-6 columns">
-    <h3>Source Data</h3>
-    <textarea id="source">{% include home/sample_data.html %}</textarea>
-  </div>
-  <div class="large-6 columns">
-    <h3>Parsed Data</h3>
-    <div class="data-table"></div>
-  </div>
-</div>
 
 <div class="row">
   <div class="large-12 columns">
-    <hr />
-    <h3>Advanced Options</h3>
-    <form id="options">
-      <div class="row">
-        <div class="large-6 columns">
-          {% include advanced_options/scale.html %}
+    <div class="section-container auto" data-section>
+      <section>
+        <p class="section-title" data-section-title><a href="#">Enter Chart Data</a></p>
+        <div class="section-panel" data-section-content>
+          {% include table_data.html %}
         </div>
-        <div class="large-6 columns">
-          {% include advanced_options/color.html %}
+      </section>
+
+      <section>
+        <p class="section-title" data-section-title><a href="#">Advanced Options</a></p>
+        <div class="section-panel" data-section-content>
+          {% include advanced_options/index.html %}
         </div>
-      </div>
-    </form>
+      </section>
+    </div>
   </div>
 </div>
 
